@@ -1,0 +1,22 @@
+.container{
+    background-color: aqua;
+    height: 300px;
+}
+
+@media screen and (min-width: 600px){ /* min width = DESDE*/
+    .container{
+        background-color: blue;
+    }
+}
+
+@media (min-width:481px) and (max-width: 599px){
+    .container{
+        background-color: black;
+        color: greenyellow;
+    }
+}
+
+@media screen and (max-width: 480px){ /* max width = HASTA*/
+    .container{
+        background-color: rgb(121, 38, 5);
+    }
