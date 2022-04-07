@@ -27,7 +27,7 @@
 }
 
 body{
-    background-color: rgb(36, 36, 41);
+    background: radial-gradient(rgb(40, 40, 44), rgb(11, 11, 12));
     margin: auto;
     color: rgb(154, 155, 161);
     font-family: 'Jura', sans-serif;
@@ -48,6 +48,7 @@ body{
     color: rgb(199, 199, 23);
     padding: 5px;
     font-size: medium;
+    transition: all 1s;
     }
 .buttonMenu a:hover{
     color: rgb(238, 255, 4);
@@ -69,6 +70,7 @@ body{
     }    
 .flex-item img:hover{
     filter: brightness(1.5);
+    transition: all 2s;
 }
 
 .grid-gallery {
@@ -186,13 +188,83 @@ h4{
     list-style: url('../imagenes/icon-list.png') 
 }
 .precio1 a{    
-    color: rgb(11, 226, 108);    
+    color: rgb(4, 201, 92);    
     font-weight: bolder;
-    font-size: large;        
+    font-size: large; 
+    text-decoration: none;
+          
 }
 
 .precio1 a:hover{
-    color: rgb(238, 255, 4);
+    color: rgb(5, 201, 31);
     font-size: 22px;
+    text-decoration: none;
+    transition: all 2s; 
 
+}
+
+
+
+
+
+
+
+
+h1 {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+h2 {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0) ;
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  
+  }
 }
