@@ -66,11 +66,12 @@ body{
 
 
 .flex-item img{
-    width: 100%;    
+    width: 100%;
+    transition: all 1s;    
     }    
 .flex-item img:hover{
     filter: brightness(1.5);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .grid-gallery {
@@ -192,6 +193,7 @@ h4{
     font-weight: bolder;
     font-size: large; 
     text-decoration: none;
+    transition: all 1s;
           
 }
 
@@ -199,7 +201,7 @@ h4{
     color: rgb(5, 201, 31);
     font-size: 22px;
     text-decoration: none;
-    transition: all 2s; 
+    transition: all 1s; 
 
 }
 
