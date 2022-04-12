@@ -34,25 +34,39 @@ body{
     padding-right: 3%;
 }
 
-
-
-.buttonMenu {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    flex-wrap: wrap;    
+.sr-only{
+  color: rgb(84, 187, 25);
 }
 
+.txt{
+  color: rgb(124, 124, 117);
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.txt:hover{
+  color: rgb(56, 173, 20);
+  transition: all 1s;
+  
+}
+
+.navbar-toggler{
+  background: rgb(46, 45, 45);  
+}
+
+
 .buttonMenu a{
-    text-decoration: none;
-    color: rgb(199, 199, 23);
-    padding: 5px;
-    font-size: medium;
-    transition: all 1s;
-    }
+  text-decoration: none;
+  color: rgb(199, 199, 23);
+  padding: 5px;
+  font-size: medium;
+  transition: all 1s;
+  }
+
+
 .buttonMenu a:hover{
-    color: rgb(238, 255, 4);
-    font-size: large;
+  color: rgb(238, 255, 4);
+  font-size: large;
 
 }
 
@@ -159,6 +173,7 @@ body{
 
 .table {
     border: 2px solid; 
+    color: rgb(116, 117, 117);
     padding-right: 0%;   
     width: 100%;
     border-radius: 1%;    
@@ -166,7 +181,7 @@ body{
     
 .table td{
     border: 1px solid;    
-    border-color: rgb(18, 27, 27);
+    border-color: rgb(0, 0, 0);
 }
 
 h1{
