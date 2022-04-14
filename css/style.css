@@ -54,6 +54,10 @@ body{
   background: rgb(46, 45, 45);  
 }
 
+.form-control{
+  background-color: rgb(28, 29, 29);
+}
+
 
 .buttonMenu a{
   text-decoration: none;
@@ -279,4 +283,25 @@ span:nth-child(7) {
     filter: blur(0);
   
   }
+}
+
+.widget-title{
+  font-size: small;
+  font-weight: bold;
+  color: rgb(87, 80, 17);
+}
+
+.usa{
+  font-size: small;
+  color: rgb(138, 50, 50);
+}
+
+.thumb-content{
+  font-size: small;
+   
+}
+
+.footer-copyright{
+  font-size: x-small;
+  color: rgb(80, 77, 77);
 }
