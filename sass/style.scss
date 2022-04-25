@@ -1,5 +1,5 @@
 
-/* Mixin forzado (no tiene mucho sentido en este sitio, se @incluye unas 9 veces)*/
+/* Mixin (quizas no tiene demasiado sentido en este sitio, pero lo pedía la consigna, @include unas 9 veces)*/
 @mixin a{
   width: 100%;
 }
@@ -261,7 +261,7 @@
   }
   
 
-  /* Maps  (no tiene mucho sentido en esta página, pero habia que hacerlo)*/
+  /* Maps  (no tiene mucho sentido en esta página, pero requerido en la consigna)*/
 
 
 $red-social: (

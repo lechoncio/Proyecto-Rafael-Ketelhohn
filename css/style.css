@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Mixin forzado (no tiene mucho sentido en este sitio, se @incluye unas 9 veces)*/
+/* Mixin (quizas no tiene demasiado sentido en este sitio, pero lo pedía la consigna, @include unas 9 veces)*/
 #grid-area {
   display: -ms-grid;
   display: grid;
@@ -302,7 +302,7 @@ span:nth-child(7) {
   transition: all 0.5s;
 }
 
-/* Maps  (no tiene mucho sentido en esta página, pero habia que hacerlo)*/
+/* Maps  (no tiene mucho sentido en esta página, pero requerido en la consigna)*/
 .yu {
   color: #9c0707;
 }
