@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Mixin forzado (no tiene mucho sentido en este sitio, se @incluye unas 9 veces)*/
 #grid-area {
   display: -ms-grid;
   display: grid;
@@ -23,24 +25,12 @@
   grid-area: main;
 }
 
-.pie a {
-  color: #eeee92;
-  text-decoration: none;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-}
-
 body {
   background: radial-gradient(#28282c, #0b0b0c);
   margin: auto;
   color: #9a9ba1;
   font-family: 'Jura', sans-serif;
   padding-right: 3%;
-}
-
-.sr-only {
-  color: #54bb19;
 }
 
 .txt {
@@ -61,20 +51,6 @@ body {
 
 .form-control {
   background-color: #323333;
-}
-
-.buttonMenu a {
-  text-decoration: none;
-  color: #c7c717;
-  padding: 5px;
-  font-size: medium;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.buttonMenu a:hover {
-  color: #eeff04;
-  font-size: large;
 }
 
 .flex-container {
@@ -172,7 +148,7 @@ body {
 }
 
 .precio {
-  width: 750px;
+  width: 100%;
 }
 
 .fuego {
@@ -315,19 +291,44 @@ span:nth-child(7) {
   color: #575011;
 }
 
+.social-footer2 a {
+  text-decoration: none;
+}
+
+.social-footer2 img:hover {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Maps  (no tiene mucho sentido en esta página, pero habia que hacerlo)*/
+.yu {
+  color: #9c0707;
+}
+
+.fb {
+  color: #5c5ca5;
+}
+
+.ig {
+  color: #97be0a;
+}
+
 .form-control {
   color: black;
   font-weight: 900;
 }
 
-.usa {
-  font-size: small;
-  color: #8a3232;
+li {
+  list-style: none;
 }
 
 .thumb-content {
   font-size: small;
-  color: #2825ee;
+  color: #723e3e;
+  text-decoration: none;
+  padding-left: 0px;
 }
 
 .footer-copyright {

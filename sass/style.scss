@@ -1,6 +1,12 @@
+
+/* Mixin forzado (no tiene mucho sentido en este sitio, se @incluye unas 9 veces)*/
+@mixin a{
+  width: 100%;
+}
+
 #grid-area {
     display: grid;
-    width: 100%;
+    @include a;
     max-width: 1000px;
     margin: auto;
     padding: 11px;
@@ -13,16 +19,10 @@
     grid-area: header;
 }
 
-.principal{
+  .principal{
     grid-area: main;    
 }
 
-.pie a{
-    color: rgb(238, 238, 146);
-    text-decoration: none;
-    grid-area: footer; 
-}
-  
   body {
     background: radial-gradient(rgb(40, 40, 44), rgb(11, 11, 12));
     margin: auto;
@@ -31,10 +31,6 @@
     padding-right: 3%;
   }
   
-  .sr-only {
-    color: rgb(84, 187, 25);
-  }
-
   .txt {
     color: rgb(124, 124, 117);
     font-size: 18px;
@@ -54,29 +50,16 @@
     background-color: rgb(50, 51, 51);
   }
   
-  .buttonMenu a {
-    text-decoration: none;
-    color: rgb(199, 199, 23);
-    padding: 5px;
-    font-size: medium;
-    transition: all 1s;
-  
-    &:hover {
-      color: rgb(238, 255, 4);
-      font-size: large;
-    }
-  }
-
   .flex-container {
     display: flex;
     flex-direction: column;
   }
   
   .flex-item {
-    width: 100%;
-  
+    @include a;
+      
     img {
-      width: 100%;
+      @include a;
       transition: all 1s;
   
       &:hover {
@@ -85,7 +68,7 @@
       }
     }
   }
-  
+ 
   .grid-gallery {
     display: grid;
     grid-auto-rows: 200px;
@@ -137,7 +120,7 @@
   }
   
   .grid-gallery__image {
-    width: 100%;
+    @include a;
     height: 100%;
     object-fit: cover;
   }
@@ -151,7 +134,7 @@
   }
   
   .precio {
-    width: 750px;
+    @include a;
   }
   
   .fuego {
@@ -167,7 +150,7 @@
     border: 2px solid;
     color: rgb(116, 117, 117);
     padding-right: 0%;
-    width: 100%;
+    @include a;
     border-radius: 1%;
   
     td {
@@ -265,19 +248,50 @@
     color: rgb(87, 80, 17);
   }
   
+  .social-footer2 {
+    
+    & a{
+      text-decoration: none;
+    }
+
+    & img:hover{
+        filter: brightness(0.3);
+        transition: all 0.5s;
+    }
+  }
+  
+
+  /* Maps  (no tiene mucho sentido en esta página, pero habia que hacerlo)*/
+
+
+$red-social: (
+  yu: rgb(156, 7, 7),
+  fb: rgb(92, 92, 165),
+  ig: #97be0a,
+);
+
+@each $nombre, $valor in $red-social {
+  .#{$nombre}{
+    color: $valor;
+
+  }
+}
+
   .form-control {
     color: black;
     font-weight: 900;
   }
   
-  .usa {
-    font-size: small;
-    color: rgb(138, 50, 50);
+  li{
+    list-style: none;
   }
+ 
   
   .thumb-content {
     font-size: small;
-    color: rgb(40, 37, 238);
+    color: rgb(114, 62, 62);
+    text-decoration: none;
+    padding-left: 0px;
   }
   
   .footer-copyright {
