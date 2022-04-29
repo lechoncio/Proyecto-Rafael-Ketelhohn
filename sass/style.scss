@@ -1,4 +1,8 @@
 
+
+
+
+
 /* Mixin (quizas no tiene demasiado sentido en este sitio, pero lo pedía la consigna, @include unas 9 veces)*/
 @mixin a{
   width: 100%;
@@ -42,14 +46,9 @@
     }
   }
 
-  .navbar-toggler {
-    background: rgb(46, 45, 45);
-  }
-  
-  .form-control {
-    background-color: rgb(50, 51, 51);
-  }
-  
+  @import "header";
+
+      
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -68,66 +67,10 @@
       }
     }
   }
- 
-  .grid-gallery {
-    display: grid;
-    grid-auto-rows: 200px;
-    gap: 1rem;
-    grid-auto-flow: row dense;
-  }
+  
+  @import "gridGallery";
 
-  @media all and (min-width: 768px) {
-    .grid-gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
   
-  @media all and (min-width: 1024px) {
-    .grid-gallery {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-  
-  .grid-gallery__item {
-    &:nth-child(13n+1) {
-      grid-column: span 1;
-    }
-  
-    &:nth-child(13n+4) {
-      grid-column: span 2;
-      grid-row: span 1;
-    }
-  
-    &:nth-child(13n+6) {
-      grid-column: span 3;
-      grid-row: span 1;
-      grid-column: span 1;
-      grid-row: span 2;
-    }
-  
-    &:nth-child(13n+8) {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-  
-    &:nth-child(13n+9) {
-      grid-row: span 2;
-    }
-  
-    &:nth-child(13n+11) {
-      grid-row: span 1;
-    }
-  }
-  
-  .grid-gallery__image {
-    @include a;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .grid-gallery img:hover {
-    filter: grayscale(1);
-  }
 
   .bateria {
     max-width: 700px;
@@ -146,18 +89,9 @@
     border-radius: 15px;
   }
 
-  .table {
-    border: 2px solid;
-    color: rgb(116, 117, 117);
-    padding-right: 0%;
-    @include a;
-    border-radius: 1%;
-  
-    td {
-      border: 1px solid;
-      border-color: rgb(0, 0, 0);
-    }
-  }
+  @import "cuadroSpecs";
+
+
 
   h3 {
     color: rgb(137, 138, 132);
@@ -190,111 +124,10 @@
     }
   }
 
-  h1, h2 {
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  }
 
-  @keyframes scale {
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  span {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-  
-    &:nth-child(1) {
-      animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    }
-  
-    &:nth-child(2) {
-      animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    }
-  
-    &:nth-child(3) {
-      animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    }
-  
-    &:nth-child(4) {
-      animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    }
-  
-    &:nth-child(5) {
-      animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    }
-  
-    &:nth-child(6) {
-      animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    }
-  
-    &:nth-child(7) {
-      animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    }
-  }
-  
-  @keyframes fade-in {
-    100% {
-      opacity: 1;
-      filter: blur(0);
-    }
-  }
+  @import "animacionesH1yH2";
 
-  .widget-title {
-    font-size: small;
-    font-weight: bold;
-    color: rgb(87, 80, 17);
-  }
-  
-  .social-footer2 {
+
+  @import "footer";
     
-    & a{
-      text-decoration: none;
-    }
-
-    & img:hover{
-        filter: brightness(0.3);
-        transition: all 0.5s;
-    }
-  }
   
-
-  /* Maps  (no tiene mucho sentido en esta página, pero requerido en la consigna)*/
-
-
-$red-social: (
-  yu: rgb(156, 7, 7),
-  fb: rgb(92, 92, 165),
-  ig: #97be0a,
-);
-
-@each $nombre, $valor in $red-social {
-  .#{$nombre}{
-    color: $valor;
-
-  }
-}
-
-  .form-control {
-    color: black;
-    font-weight: 900;
-  }
-  
-  li{
-    list-style: none;
-  }
- 
-  
-  .thumb-content {
-    font-size: small;
-    color: rgb(114, 62, 62);
-    text-decoration: none;
-    padding-left: 0px;
-  }
-  
-  .footer-copyright {
-    font-size: x-small;
-    color: rgb(80, 77, 77);
-  }

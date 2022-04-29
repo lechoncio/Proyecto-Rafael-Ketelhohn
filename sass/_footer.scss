@@ -1,0 +1,51 @@
+
+.social-footer2 {
+    
+    & a{
+      text-decoration: none;
+    }
+
+    & img:hover{
+        filter: brightness(0.3);
+        transition: all 0.5s;
+    }
+  }
+  
+
+  /* Maps  (no tiene mucho sentido en esta página, pero requerido en la consigna)*/
+
+
+$red-social: (
+  yu: rgb(156, 7, 7),
+  fb: rgb(92, 92, 165),
+  ig: #97be0a,
+);
+
+@each $nombre, $valor in $red-social {
+  .#{$nombre}{
+    color: $valor;
+
+  }
+}
+
+  .form-control {
+    color: black;
+    font-weight: 900;
+  }
+  
+  li{
+    list-style: none;
+  }
+ 
+  
+  .thumb-content {
+    font-size: small;
+    color: rgb(114, 62, 62);
+    text-decoration: none;
+    padding-left: 0px;
+  }
+  
+  .footer-copyright {
+    font-size: x-small;
+    color: rgb(80, 77, 77);
+  }
