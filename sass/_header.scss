@@ -1,5 +1,17 @@
 /* el header lo hice básicamente con Boomstrap por lo que el "partial header" queda muy básica, solo le cambio el color de fondo de las casillas del Menu hamburguesa y del formulario de contacto que quedaba muy feo de blanco.*/
 
+.txt {
+  color: rgb(124, 124, 117);
+  font-size: 18px;
+  font-weight: bolder;
+
+  &:hover {
+    color: rgb(56, 173, 20);
+    transition: all 1s;
+  }
+}
+
+
 .navbar-toggler {
     background: rgb(46, 45, 45);
   }
