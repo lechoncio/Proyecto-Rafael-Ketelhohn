@@ -15,7 +15,7 @@ $mensaje .= "Enviado el:" . date("d/m/y", time());
 $para = "rafaelk@gmail.com";
 $asunto = "Mail de Segway"
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
-header("location:exito.html")
+mail($para, $asunto, $mensaje, $header);
+header("Location:exito.html")
 
 ?>
