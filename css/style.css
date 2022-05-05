@@ -207,6 +207,29 @@ h4 {
   transition: all 1s;
 }
 
+.precio1 {
+  color: #cccfce;
+  font-weight: bolder;
+  font-size: large;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.precio1:hover {
+  color: #05c91f;
+  font-size: 22px;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.precio3 {
+  color: #44ce0e;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
 h1, h2 {
   -webkit-transform: scale(0.94);
           transform: scale(0.94);
