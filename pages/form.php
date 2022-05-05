@@ -16,6 +16,6 @@ $para = "rafaelk@gmail.com";
 $asunto = "Mail de Segway"
 
 mail($para, $asunto, $mensaje, $header);
-header("Location:exito.html")
+header("Location:senia.html")
 
 ?>
