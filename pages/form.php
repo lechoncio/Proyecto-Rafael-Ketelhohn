@@ -13,7 +13,7 @@ $mensaje .= "Mensaje:" . $_POST["comentarios"] . "\r\n";
 $mensaje .= "Enviado el:" . date("d/m/y", time());
 
 $para = "rafaelk@gmail.com";
-$asunto = "Mail de Segway"
+$asunto = "Mail de Segway";
 
 mail($para, $asunto, $mensaje, $header);
 header("Location:senia.html")
