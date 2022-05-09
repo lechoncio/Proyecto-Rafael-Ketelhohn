@@ -5,7 +5,7 @@
 
 /* Mixin (quizas no tiene demasiado sentido en este sitio, pero lo pedía la consigna, @include unas 9 veces)*/
 @mixin a{
-  width: 100%;
+    width: 100%;
 }
 
 #grid-area {
@@ -24,7 +24,9 @@
 }
 
   .principal{
-    grid-area: main;    
+    grid-area: main;
+    
+
 }
 
   body {
@@ -41,11 +43,14 @@
       
   .flex-container {
     display: flex;
+    justify-items: center;
     flex-direction: column;
+    max-width: 900px
   }
   
   .flex-item {
     @include a;
+    
       
     img {
       @include a;
@@ -68,6 +73,7 @@
   
   .precio {
     @include a;
+    max-width: 900px;
   }
   
   .fuego {
