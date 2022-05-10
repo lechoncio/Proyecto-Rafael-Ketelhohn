@@ -67,6 +67,7 @@ body {
 }
 
 .flex-item {
+  padding: 10px;
   width: 100%;
 }
 
@@ -147,7 +148,8 @@ body {
 }
 
 .bateria {
-  max-width: 700px;
+  max-width: 900px;
+  padding: 2px;
 }
 
 .precio {
@@ -156,7 +158,8 @@ body {
 }
 
 .fuego {
-  max-width: 300px;
+  width: 400px;
+  padding: 2px;
 }
 
 .borde {
@@ -165,6 +168,7 @@ body {
 }
 
 .table {
+  max-width: 900px;
   border: 2px solid;
   color: #747575;
   padding-right: 0%;
@@ -175,6 +179,11 @@ body {
 .table td {
   border: 1px solid;
   border-color: black;
+}
+
+hr {
+  max-width: 900px;
+  background-color: #979292;
 }
 
 h3 {
@@ -188,9 +197,17 @@ h4 {
   font-size: x-large;
 }
 
+.recomendaciones li {
+  list-style-type: circle;
+}
+
 .listas ul li {
   list-style-type: none;
   list-style: url("../imagenes/icon-list.png");
+}
+
+.btn {
+  margin: 50px 0px 10px 0px;
 }
 
 .precio1 a {
@@ -310,6 +327,10 @@ span:nth-child(7) {
     -webkit-filter: blur(0);
             filter: blur(0);
   }
+}
+
+#footer {
+  padding: 50px 0px 300px 0px;
 }
 
 .social-footer2 a {
