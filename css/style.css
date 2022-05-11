@@ -333,11 +333,11 @@ span:nth-child(7) {
   padding: 50px 0px 300px 0px;
 }
 
-.social-footer2 a {
+.yu a, .fb a, .ig a {
   text-decoration: none;
 }
 
-.social-footer2 img:hover {
+.yu img:hover, .fb img:hover, .ig img:hover {
   -webkit-filter: brightness(0.3);
           filter: brightness(0.3);
   -webkit-transition: all 0.5s;
