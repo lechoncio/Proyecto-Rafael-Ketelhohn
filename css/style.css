@@ -210,6 +210,17 @@ h4 {
   margin: 50px 0px 10px 0px;
 }
 
+.whatsapp {
+  width: 25px;
+}
+
+.whatsapp:hover {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .precio1 a {
   color: #04c95c;
   font-weight: bolder;
